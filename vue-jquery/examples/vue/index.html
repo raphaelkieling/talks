@@ -5,64 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <style>
-      .multi-select {
-        display: flex;
-      }
-      .multi-select--item {
-        flex: 1;
-      }
-      .multi-select--action{
-        display:flex;
-        flex-direction: column;
-        max-width: 30px;
-      }
-    </style>
   </head>
   <body>
-    <div id="app">
-      <div class="multi-select">
-        <select multiple class="multi-select--item" v-model="selectedsLeft">
-          <option v-for="item in itemsLeft" v-bind:value="item">{{item}}</option>
-        </select>
-        <div class="multi-select--action">
-          <button @click="transportFromLeft">></button>
-          <button @click="transportFromRight"><</button>
-          <button>>></button>
-          <button><<</button>
-        </div class="multi-select--item">
-        <select multiple v-model="selectedsRight">
-            <option v-for="item in itemsRight" v-bind:value="item">{{item}}</option>
-        </select>
-      </div>
-    </div>
-    <!-- Scripts -->
-    <script src="../bower_components/vue/dist/vue.js"></script>
-    <script>
-      new Vue({
-        el: "#app",
-        data:()=>({
-            selectedsLeft:[],
-            itemsLeft:[1,2,3,4,5,6],
-            selectedsRight:[],
-            itemsRight:[]
-        }),
-        methods:{
-            transport(from,to){
-
-            },
-            transportFromLeft(){
-                const filteredValue = this.itemsLeft.filter(val=> this.selectedsLeft.includes(val));
-                this.itemsLeft = this.itemsLeft.filter(val => !filteredValue.includes(val))
-                this.itemsRight = [...this.itemsRight,...filteredValue];
-            },
-            transportFromRight(){
-                const filteredValue = this.itemsRight.filter(val=> this.selectedsLeft.includes(val));
-                this.itemsRight = this.itemsRight.filter(val => !filteredValue.includes(val))
-                this.itemLeft = [...this.itemLeft,...filteredValue];
-            }
-        }
-      });
-    </script>
+    <div id="app"></div>
+    <script src="index.js"></script>
   </body>
 </html>
