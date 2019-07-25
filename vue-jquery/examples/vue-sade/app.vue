@@ -1,9 +1,8 @@
 <template>
   <div>
-    <b-navbar variant="light" type="light" class="shadow-sm">
+    <b-navbar variant="dark" type="dark" class="shadow-sm">
       <b-navbar-brand href="#">
-        <logo></logo>
-        <span class="ml-3">Egsys</span>
+        <span class="ml-3">Sade Talk</span>
       </b-navbar-brand>
     </b-navbar>
 
@@ -12,7 +11,7 @@
         <div class="row">
           <div class="col-md-6">
             <b-card no-body>
-              <b-tabs content-class="mt-3" pills card lazy>
+              <b-tabs content-class="mt-3" card lazy>
                 <b-tab title="Dados Iniciais" active>
                   <form-dados-iniciais></form-dados-iniciais>
                 </b-tab>

@@ -37,17 +37,30 @@
     </form>
 
     <b-spinner v-if="state.fato.loading" type="grow" label="Loading..."></b-spinner>
-    <b-table v-else striped hover :items="state.fato.list" :fields="fields" class="mt-3">
+    <b-table
+      v-else-if="state.fato.list.length"
+      striped
+      hover
+      :items="state.fato.list"
+      :fields="fields"
+      class="mt-3"
+    >
       <template slot="acao" slot-scope="{ item }">
         <b-button size="sm" @click="edit(item.id)">Editar</b-button>
         <b-button size="sm" variant="danger" @click="popOne">Retirar</b-button>
       </template>
     </b-table>
+    <div v-else class="text-center">
+      <empty message="Nenhum fato encontrado"></empty>
+    </div>
   </div>
 </template>
 
 <script>
+import Empty from "../empty.vue";
+
 export default {
+  components: { Empty },
   inject: ["state", "getNaturezas", "getFatos"],
   data() {
     return {

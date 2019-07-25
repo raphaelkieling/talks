@@ -20,19 +20,7 @@ export function getGrupos() {
 
 export function getFatos() {
   console.log("[api] fatos");
-  return mock([
-    {
-      grupo: {
-        id: 2,
-        description: "Grupo 2"
-      },
-      natureza: {
-        id: 1,
-        description: "Briga"
-      },
-      id: "0.37436735304295476"
-    }
-  ]);
+  return mock([]);
 }
 
 export function getEnvolvidos() {

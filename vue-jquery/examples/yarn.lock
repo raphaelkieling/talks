@@ -5308,6 +5308,11 @@ vue-hot-reload-api@^2.3.3:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
   integrity sha512-KmvZVtmM26BQOMK1rwUZsrqxEGeKiYSZGA7SNWE6uExx8UX/cj9hq2MRV/wWC3Cq6AoeDGk57rL9YMFRel/q+g==
 
+vue-json-pretty@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/vue-json-pretty/-/vue-json-pretty-1.6.0.tgz#ea3efaa7d574ee987e636908395ae4a7044f9aee"
+  integrity sha512-yLQ2Kuk4S+fPxVncww9kPO72pTiGrZfgyi1P+Vhmy1kR7J1CwzYli8uyhgdTMPaz0h2zqiDF0VGtzX+FTrwbig==
+
 vue-template-compiler@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.10.tgz#323b4f3495f04faa3503337a82f5d6507799c9cc"
