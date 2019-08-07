@@ -1,5 +1,14 @@
 # Vue vs Jquery
 
+## Rodando
+
+`cd examples`
+
+`npm install`
+
+`npm run start:vue-sade ou npm run start:vue`
+
+
 ## O que são
 
 Antes precisamos entender em que epocas foram criadas e porque foram criadas dado os problemas.
